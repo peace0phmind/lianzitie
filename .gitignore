@@ -53,3 +53,4 @@ Temporary Items
 *.out
 latex/*.pdf
 latex/hanzisheet.cls
+.idea
