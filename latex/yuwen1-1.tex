@@ -21,16 +21,26 @@
 \definecolor{default_character_color}{RGB}{0,0,0}
 
 \newcommand\hanzigroup[1]{%
-\hanzibox{#1}{textColor=default_character_color}\hspace{-0.4pt}%
-    \foreach \n in {1,...,5}{%
-        \hanzibox{#1}{}\hspace{-0.4pt}%
-    }%
+    % \hanzibox{#1}{textColor=default_character_color}\hspace{-0.4pt}%
+%    \foreach \n in {1,...,3}{%
+%        \hanzibox{#1}{}\hspace{-0.4pt}%
+%    }%
+    \hanzibox{#1}{textColor=default_character_color}\hspace{-0.4pt}%
+    \hanzibox{#1}{}\hspace{-0.4pt}%
+    \hanzibox{#1}{}\hspace{-0.4pt}%
+    \hanzibox{#1}{}\hspace{-0.4pt}%
+    \hanzibox{}{}\hspace{-0.4pt}%
+    \hanzibox{}{}\hspace{-0.4pt}%
     \hspace{-2.4pt}%
 }%
 
 \begin{document}
 \noindent
-\hanzigroup{character=田}
+\hanzigroup{character=天}
+\hanzigroup{character=地}
+\hanzigroup{character=人}
+\hanzigroup{character=你}
 \hanzigroup{character=我}
+\hanzigroup{character=他}
 
 \end{document}
