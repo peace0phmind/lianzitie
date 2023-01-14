@@ -17,7 +17,7 @@
 \usepackage[utf8]{inputenc}
 
 %used as tmp color%
-\definecolor{character_color}{RGB}{170,170,170}
+\definecolor{character_color}{RGB}{224,224,224}
 
 \makeatletter
 
@@ -29,6 +29,7 @@
 \define@key{hanzibox}{pinyin}{\def\mm@pin{#1}}
 \define@key{hanzibox}{character}{\def\mm@char{#1}}
 \define@key{hanzibox}{translation}{\def\mm@tran{#1}}
+\define@key{hanzibox}{textColor}{\def\mm@tc{#1}}
 
 \tikzset{%
 	stretch dash/.code args={on #1 off #2}{%
@@ -98,13 +99,13 @@
 		\ifthenelse{\charslen = 0}%
 		{%
 			\draw[thin, black] (0,0) rectangle(2,2);
-			{\node[] at (1,1){\huge\mm@char};}%
+			{\node[] at (1,1){\huge\textcolor{\mm@tc}\mm@char};}%
 			\ifthenelse{\pinlen = 0}{}{\node[label={\strut\small\pinyin{\mm@pin}}, text height=1cm] (charr) at (1,1){};}%
 			\ifthenelse{\tranlen = 0}{}{\node[align=center] at (1,-0.2){\strut\tiny\textit{\mm@tran}};}%
 		}%
 		{%
 			\ifthenelse{\equal{\mm@bo}{yes}}{\draw[thin, black] (0,0) rectangle(2*\charslen,2);}{}%
-			{\node[] at (1*\charslen,1){\huge\mm@char};}%
+			{\node[] at (1*\charslen,1){\huge\textcolor{\mm@tc}\mm@char};}%
 			\ifthenelse{\pinlen = 0}{}{\node[label={\strut\small\pinyin{\mm@pin}}, text height=1cm] (charr) at (1*\charslen,1){};}%
 			\ifthenelse{\tranlen = 0}{}{\node[align=center] at (1*\charslen,-0.2){\strut\tiny\textit{\mm@tran}};}%
 		}%
@@ -115,7 +116,7 @@
 	\begingroup%
 	% Set keys + defaults if options not provided
 	\setkeys{hanzibox}{pinyin={},character={},translation={},#1}%
-	\setkeys{hanzibox}{inner={star},border=yes,borderWidth={0.4pt},borderColor={0,0,0},#2}%
+	\setkeys{hanzibox}{inner={star},textColor={character_color},border=yes,borderWidth={0.4pt},borderColor={0,0,0},#2}%
 	\drawhanzibox%
 	\endgroup%
 }%
