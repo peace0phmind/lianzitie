@@ -39,4 +39,5 @@ This project is licensed under the [MIT License](LICENSE.md).
 ###
 ```bash
 xelatex yuwen1-1.tex
+lualatex yuwen1-1.tex
 ```
