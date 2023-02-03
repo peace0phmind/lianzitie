@@ -49,8 +49,8 @@
             \ifnum\py@yunpriv\py@char > \py@yunpriv\py@tuneletter
                 \edef\py@tuneletter{\py@char}\edef\py@first{\py@befirst}\def\py@last{}%
             \else
-                \ifnum 60 = \py@yunpriv\py@char
-                    \ifnum 70 = \py@yunpriv\py@tuneletter
+                \if u\py@char
+                    \if i\py@tuneletter
                         \edef\py@tuneletter{\py@char}\edef\py@first{\py@befirst}\def\py@last{}%
                     \else
                         \edef\py@last{\py@last\if v\py@char\"u\else\py@char\fi}%
