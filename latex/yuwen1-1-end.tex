@@ -1,0 +1,352 @@
+% Name: Demo Sandbox
+% Description: Multiple fancy examples
+% 
+% Last modified
+% Date: 2018/03/22
+
+\documentclass[]{report}
+
+\usepackage{hanzibox} % Display character boxes with various options
+\usepackage{hyperref} % for http link
+\usepackage{lastpage} % show page/lastPage
+\usepackage{fancyhdr}
+\usepackage[top=2.5cm,bottom=1.5cm,left=2.5cm,right=1.5cm,headsep=1cm,footskip=0pt]{geometry}
+
+\pagestyle{fancy}
+
+% Header
+\lhead{一年级上}
+
+% Border under header and over footer
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\definecolor{default_character_color}{RGB}{0,0,0}
+
+\newcommand\hanzigroup[1]{%
+    % \hanzibox{#1}{textColor=default_character_color}\hspace{-0.4pt}%
+%    \foreach \n in {1,...,3}{%
+%        \hanzibox{#1}{}\hspace{-0.4pt}%
+%    }%
+    \hanzibox{#1}{textColor=default_character_color}\hspace{-0.4pt}%
+    \hanzibox{#1}{pinyin=, pinYinGrid=yes}\hspace{-0.4pt}%
+    \hanzibox{#1}{pinyin=, pinYinGrid=yes}\hspace{-0.4pt}%
+    \hanzibox{#1}{pinyin=, pinYinGrid=yes}\hspace{-0.4pt}%
+    \hanzibox{}{pinYinGrid=yes}\hspace{-0.4pt}%
+    \hanzibox{}{pinYinGrid=yes}\hspace{-0.4pt}%
+    \hspace{-2.4pt}%
+}%
+
+\begin{document}
+\kaishu
+\noindent
+\hanzibox{pinyin=yi2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ge4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=er4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yue4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=san1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cun4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shang4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xia4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=da4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=kou3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=mu4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=er3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=er3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=mu4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xiao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shou3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=ri4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=chu1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=tian2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=li3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=he2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=miao2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=da4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=huo3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chong2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zi5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bai2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yun2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=da4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shan1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shui3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xiu4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=lan2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bai2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yun2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=cao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yuan2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=sen1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lin2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bai2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xue2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xiao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=jia1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ren2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bu2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shi4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=huo3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=che1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ma3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lu4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=tai2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=deng1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xin2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zou3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=hao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=le5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=er2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zi5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ren2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=men2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=da4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ren2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=tou2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=fa5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=li3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=mian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=mu4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=guang1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ji3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ge2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=jiang1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=nan2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=cai3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lian2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ke3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yi3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=dong1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=fang1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=xi1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=mian4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chun1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=si4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ji4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ke3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shi4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=tu3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=di4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=dong1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=qing1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=qing1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shui3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=he2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shui3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=lai2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=qu4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bu4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=duo1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xiao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=niu2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shui3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=guo3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xiao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=niao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zhi3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=you3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=zao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shang4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shu1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ben3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xiao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=dao1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xue2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xiao4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zuo4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ye4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shu1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=bao1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chi3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zi5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ben3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zi5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=mu4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tou5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=sen1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lin2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chen2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tu2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=li4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=qi5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shou3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xin1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zhong1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=jian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=wu3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ge4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=li4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zheng4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=hou4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lai2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=wo3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=men2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=mei3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=qian2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hou4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zuo3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=you4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=peng2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=you3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chang2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=jiang1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bi3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=fang1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=wei3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ba1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ba3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shou3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xie3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=zi4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=yi2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=chuan4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=guo4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=lai2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=dang1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cheng2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bu4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=gei3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xia4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yu3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=bu2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yao4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=men2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=kou3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ban4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=kong1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=fang1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xiang4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zhang3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=chu1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=geng4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=mei2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=you3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=lv4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=se4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=wen4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hao2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ban2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=cong2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=qian2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ni3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hao3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zhen1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=de5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=lao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shi1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shen2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=me5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ren2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cai2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=gang1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=cai2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ming2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=tong2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xue2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xue2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=xi2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=zi4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ji3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=yi1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=fu5, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=lan2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=jin1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=se4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=he2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ping2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=you4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=da4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=you4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=hong2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=shan1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=dong4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=can1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=jia1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=yue4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ya2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=yi4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=qun4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ji3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=tian1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=zhu3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ye4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chong2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=ya2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=ma3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shang4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=you3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=yong4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bao3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=shi2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=xu3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=duo1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=kan4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=jian4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=chu1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=men2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+
+\noindent
+\hanzibox{pinyin=dui4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=mian4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=dao4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=chu4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=wan2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=quan2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=hui2, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=jia1, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=jia1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=fa3, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=guo3, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=pi2, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=bian4, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=se4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\hanzibox{pinyin=sheng1, character=, }{inner=cross, pinYinGrid=no}\hspace{-0.4pt}%
+\hanzibox{pinyin=qi4, character=, }{inner=cross, pinYinGrid=no}\hspace{0.2cm}%
+\end{document}
+
+
+
+
+
